@@ -1,0 +1,17 @@
+{
+  "buildSteps": [
+    {
+      "step": "rm",
+      "path": "docs"
+    },
+    {
+      "step": "mkdir",
+      "path": "docs"
+    },
+    {
+      "step": "cp",
+      "inputFile": "CNAME",
+      "outputFile": "docs/CNAME"
+    }
+  ]
+}
