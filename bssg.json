@@ -12,6 +12,11 @@
       "step": "cp",
       "inputFile": "CNAME",
       "outputFile": "docs/CNAME"
+    },
+    {
+      "step": "cp",
+      "inputFile": "webring.txt",
+      "outputFile": "docs/webring.txt"
     }
   ]
 }
