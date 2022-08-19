@@ -17,3 +17,13 @@ outputFile = "docs/CNAME"
 step = "cp"
 inputFile = "webring.txt"
 outputFile = "docs/webring.txt"
+
+[[build.steps]]
+step = "transformless"
+inputFile = "style.less"
+outputFile = "docs/style.css"
+
+[[build.steps]]
+step = "transformpug"
+inputFile = "pug/index.pug"
+outputFile = "docs/index.html"
