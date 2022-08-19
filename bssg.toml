@@ -1,0 +1,19 @@
+[bssg]
+
+[[build.steps]]
+step = "rm"
+path = "docs"
+
+[[build.steps]]
+step = "mkdir"
+path = "docs"
+
+[[build.steps]]
+step = "cp"
+inputFile = "CNAME"
+outputFile = "docs/CNAME"
+
+[[build.steps]]
+step = "cp"
+inputFile = "webring.txt"
+outputFile = "docs/webring.txt"
