@@ -1,29 +1,33 @@
 [bssg]
 
-[[build.steps]]
+[build]
+step = "steplist"
+steps = ["rmdocs", "mkdocs", "cname", "webring", "less", "pugindex"]
+
+[rmdocs]
 step = "rm"
 path = "docs"
 
-[[build.steps]]
+[mkdocs]
 step = "mkdir"
 path = "docs"
 
-[[build.steps]]
+[cname]
 step = "cp"
 inputFile = "CNAME"
 outputFile = "docs/CNAME"
 
-[[build.steps]]
+[webring]
 step = "cp"
 inputFile = "webring.txt"
 outputFile = "docs/webring.txt"
 
-[[build.steps]]
+[less]
 step = "transformless"
 inputFile = "style.less"
 outputFile = "docs/style.css"
 
-[[build.steps]]
+[pugindex]
 step = "transformpug"
 inputFile = "pug/index.pug"
 outputFile = "docs/index.html"
